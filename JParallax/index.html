@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div id="parallax">
+		<div class="bg1 parallax-layer"></div>
+		<div class="bg2 parallax-layer"></div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery.parallax.min.js"></script>
+	<script src="js/jquery.event.frame.js"></script>
+	<script>
+		$(function(){
+			$('#parallax .parallax-layer').parallax({
+				// mouseport: $('#parallax')
+			});
+		});
+	</script>
+</body>
+</html>
